@@ -1,0 +1,121 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #0077B6;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    background-color: #023E8A;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.topbar nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topbar nav ul li {
+    margin: 0 20px;
+}
+
+.topbar nav ul li button {
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.topbar nav ul li button:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('images/sea-background.png') no-repeat center center/cover;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/fishes-background.png') no-repeat center center/cover;
+    opacity: 0.5;
+}
+
+.title {
+    position: relative;
+    font-size: 5em;
+    color: #00B4D8;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 10;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+/* Esconde o título grande quando uma seção é exibida */
+.title.hidden {
+    display: none;
+}
+
+/* Estilo das seções de conteúdo */
+.content-section {
+    display: none;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background: rgba(0, 119, 182, 0.8);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00B4D8;
+    font-size: 2em;
+}
+
+h3 {
+    color: #90E0EF;
+    font-size: 1.5em;
+}
+
+/* Exibe o título na barra superior quando a seção é aberta */
+#topbar-title {
+    display: block;
+}
+
+.content-visible #topbar-title {
+    display: block;
+}
